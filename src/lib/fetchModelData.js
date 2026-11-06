@@ -1,6 +1,8 @@
 import fetchPreviewModel from "./fetchPreviewModel";
 
 const localApiUrl = "http://127.0.0.1:3001";
+const stackBlitzApiUrl =
+  "https://stackblitzstartershmbpmnre-23x5--3001--f669633e.local-credentialless.webcontainer.io";
 const apiStorageKey = "photo-sharing-api-url";
 
 function apiBaseUrl() {
@@ -32,7 +34,7 @@ function apiBaseUrl() {
     return localApiUrl;
   }
 
-  throw new Error("Mở backend, sau đó thêm ?api=URL_BACKEND vào URL của frontend.");
+  return stackBlitzApiUrl;
 }
 
 async function fetchModel(url, signal) {
