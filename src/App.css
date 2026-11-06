@@ -1,0 +1,6 @@
+.main-grid-item {
+  box-sizing: border-box;
+  height: calc(100vh - 85px);
+  overflow-y: auto;
+  padding: 10px;
+}
